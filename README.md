@@ -82,9 +82,10 @@ SpendApp is a simple and intuitive expense tracking app designed to help you tak
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section] <>
+![IMG_7796](https://github.com/user-attachments/assets/24246fdc-3d35-4740-ae16-4b9c64922781)
 
 <br>
-![IMG_7796](https://github.com/user-attachments/assets/24246fdc-3d35-4740-ae16-4b9c64922781)
+
 
 <br>
 
