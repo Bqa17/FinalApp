@@ -22,14 +22,14 @@ class ListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(ListViewModel::class.java)
+        val listViewModel =
+            ViewModelProvider(this)[ListViewModel::class.java]
 
         _binding = FragmentListBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textList
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textListTitle
+        listViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

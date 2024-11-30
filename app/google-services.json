@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309851205734",
+    "project_id": "spendapp-f8e82",
+    "storage_bucket": "spendapp-f8e82.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309851205734:android:510dadbd7a3d0231c8fda7",
+        "android_client_info": {
+          "package_name": "com.example.finalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmt7EQOKPMXW4SHthaPfVDEzp6yB_rYIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
