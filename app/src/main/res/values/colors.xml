@@ -10,6 +10,8 @@
     <color name="gray">#FF888888</color>
     <color name="primary">#FF6200EE</color>
     <color name="secondary">#FF3700B3</color>
+    <color name="add_green">#1C7804</color>
+    <color name="deduct_red">#D74B4B</color>
     <color name="green">#00A91B</color>
     <color name="light_gray">#545454</color>
     <color name="accent">#6E3F9B</color>

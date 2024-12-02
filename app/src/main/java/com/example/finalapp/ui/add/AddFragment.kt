@@ -27,11 +27,11 @@ class AddFragment : Fragment() {
 
         _binding = FragmentAddBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.buttonAddExpense
-        addViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+//
+//        val textView: TextView = binding.buttonAddExpense
+//        addViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
