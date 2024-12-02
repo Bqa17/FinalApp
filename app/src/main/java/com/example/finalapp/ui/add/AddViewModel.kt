@@ -12,7 +12,7 @@ class AddViewModel(private val budgetDao: BudgetDao) : ViewModel() {
     fun addBudget(amount: String, category: String) {
         val budgetEntity = BudgetEntity(
             amount = amount,
-            category = CharCategory.valueOf(category).toString()
+            category = category
         )
         viewModelScope.launch(Dispatchers.IO) {
             budgetDao.insert(budgetEntity)
