@@ -41,7 +41,7 @@ SpendApp is a simple and intuitive expense tracking app designed to help you tak
 
 **Required Features**
 
-1. User can log a new expense by entering details (e.g., amount, category, and description).
+[x] User can log a new expense by entering details (e.g., amount, category, and description).
 3. User can set a monthly budget.
 4. User can view a summary of their expenses.
 5. User can see their budget progress and key statistics.
@@ -101,17 +101,22 @@ SpendApp is a simple and intuitive expense tracking app designed to help you tak
 
 [Add screenshot of your Project Board with three milestones visible in
 this section]
+![image](https://github.com/user-attachments/assets/3fc423f9-3dd9-4f1f-b4ab-8588bb0bf2ab)
+
 <>
 
 ## Issue cards
 
-- [Add screenshot of your Project Board with the issues that you've been working on for this unit's milestone] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-- [Add screenshot of your Project Board with the issues that you're working on in the **NEXT sprint**. It should include issues for next unit with assigned owners.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+- ![image](https://github.com/user-attachments/assets/8f96df39-3aa1-44bf-a074-5d12c3ff7fea)
+
+- ![image](https://github.com/user-attachments/assets/4d07318a-bb35-4aeb-ac9e-ce7ac107b6b5)
+
 
 ## Issues worked on this sprint
 
-- List the issues you completed this sprint
-- [Add giphy that shows current build progress for Milestone 2. Note: We will be looking for progression of work between Milestone 2 and 3. Make sure your giphys are not duplicated and clearly show the change from Sprint 1 to 2.]
+- ![image](https://github.com/user-attachments/assets/0a0c429c-c680-47db-8423-34cf4566015a)
+
+- ![final1](https://github.com/user-attachments/assets/e1b34186-c63d-4117-a4d9-58789598ea04)
 
 <br>
 
