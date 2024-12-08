@@ -4,4 +4,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_add">Add</string>
     <string name="title_list">List</string>
+    <string name="amount_format">+%.2f</string>
+    <string name="amount_format_negative">-%.2f</string>
 </resources>
