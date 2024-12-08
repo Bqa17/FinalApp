@@ -1,5 +1,7 @@
 package com.example.finalapp.ui.add
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.finalapp.BudgetDao
@@ -11,6 +13,8 @@ import java.util.Date
 import java.util.Locale
 
 class AddViewModel(private val budgetDao: BudgetDao) : ViewModel() {
+    private val _recentTransactions = MutableLiveData<List<BudgetEntity>>()
+    val recentTransactions: LiveData<List<BudgetEntity>> = _recentTransactions
 
     fun addBudget(amount: String, category: String) {
         val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
@@ -22,6 +26,7 @@ class AddViewModel(private val budgetDao: BudgetDao) : ViewModel() {
         )
         viewModelScope.launch(Dispatchers.IO) {
             budgetDao.insert(budgetEntity)
+
         }
     }
 }

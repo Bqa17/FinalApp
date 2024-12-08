@@ -27,7 +27,7 @@ class PurchaseAdapter(private var purchases: List<BudgetEntity>) :
         notifyDataSetChanged()
     }
 
-    inner class PurchaseViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class PurchaseViewHolder(private val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(budget: BudgetEntity) {
             binding.textTransactionName.text = budget.category
             binding.textTransactionDate.text =

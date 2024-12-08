@@ -1,13 +1,11 @@
 package com.example.finalapp.ui.dashboard
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
+import com.example.finalapp.BudgetDao
+import com.example.finalapp.BudgetEntity
 
-class DashboardViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
-    }
-    val text: LiveData<String> = _text
+class DashboardViewModel(budgetDao: BudgetDao) : ViewModel() {
+    val recentTransactions: LiveData<List<BudgetEntity>> = budgetDao.getAllBudgets().asLiveData()
 }
