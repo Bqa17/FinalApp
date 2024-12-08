@@ -8,5 +8,6 @@ import androidx.room.PrimaryKey
 data class BudgetEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     @ColumnInfo val amount: String,
-    @ColumnInfo val category: String
+    @ColumnInfo val category: String,
+    @ColumnInfo val date: String // Store date as a timestamp
 )

@@ -4,36 +4,43 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.finalapp.BudgetDatabase
 import com.example.finalapp.databinding.FragmentListBinding
 
 class ListFragment : Fragment() {
 
     private var _binding: FragmentListBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var adapter: PurchaseAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val listViewModel =
-            ViewModelProvider(this)[ListViewModel::class.java]
+        val budgetDao = BudgetDatabase.getInstance(requireContext()).budgetDao()
+        val factory = ListViewModelFactory(budgetDao)
+        val listViewModel = ViewModelProvider(this, factory)[ListViewModel::class.java]
 
         _binding = FragmentListBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textListTitle
-        listViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        adapter = PurchaseAdapter(emptyList())
+        binding.recyclerSectionedList.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = this@ListFragment.adapter
         }
+
+        listViewModel.budgets.observe(viewLifecycleOwner) { purchases ->
+            adapter.updateData(purchases)
+        }
+
         return root
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

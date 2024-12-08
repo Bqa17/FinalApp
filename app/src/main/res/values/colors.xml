@@ -13,6 +13,7 @@
     <color name="add_green">#1C7804</color>
     <color name="deduct_red">#D74B4B</color>
     <color name="green">#00A91B</color>
+    <color name="red">#F44336</color>
     <color name="light_gray">#545454</color>
     <color name="accent">#6E3F9B</color>
 </resources>

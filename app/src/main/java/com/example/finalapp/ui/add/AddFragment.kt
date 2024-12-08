@@ -11,7 +11,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.finalapp.AddViewModelFactory
 import com.example.finalapp.BudgetApplication
-import com.example.finalapp.CharCategory
+import com.example.finalapp.ExpenseCategory
+import com.example.finalapp.IncomeCategory
 import com.example.finalapp.databinding.FragmentAddBinding
 
 class AddFragment : Fragment() {
@@ -43,23 +44,19 @@ class AddFragment : Fragment() {
     }
 
     private fun setupSpinners() {
-        // Spinner setup for categories
-        val categories = CharCategory.entries.map { it.name } // Updated for enum values
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, categories)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        // Spinner setup for expense categories
+        val expenseCategories = ExpenseCategory.entries.map { it.name }
+        val expenseAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, expenseCategories)
+        expenseAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerExpenseCategory.adapter = expenseAdapter
 
-        binding.spinnerExpenseCategory.adapter = adapter
-        binding.spinnerIncomeCategory.adapter = adapter
-
-        // Optional: Handle category selection
-        binding.spinnerExpenseCategory.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                // Handle selected category if needed
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {}
-        }
+        // Spinner setup for income categories
+        val incomeCategories = IncomeCategory.entries.map { it.name }
+        val incomeAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, incomeCategories)
+        incomeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerIncomeCategory.adapter = incomeAdapter
     }
+
 
     private fun setupButtons() {
         binding.buttonAddExpense.setOnClickListener {
