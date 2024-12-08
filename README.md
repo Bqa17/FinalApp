@@ -41,11 +41,11 @@ SpendApp is a simple and intuitive expense tracking app designed to help you tak
 
 **Required Features**
 
-[x] User can log a new expense by entering details (e.g., amount, category, and description).
-3. User can set a monthly budget.
-4. User can view a summary of their expenses.
-5. User can see their budget progress and key statistics.
-6. User can filter transactions by category or date.
+- [x] User can log a new expense by entering details (e.g., amount, category, and description).
+- [ ] User can set a monthly budget.
+- [ ] User can view a summary of their expenses.
+- [ ] User can see their budget progress and key statistics.
+- [ ] User can filter transactions by category or date.
 
 **Optional Features**
 
