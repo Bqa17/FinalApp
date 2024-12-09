@@ -43,8 +43,8 @@ SpendApp is a simple and intuitive expense tracking app designed to help you tak
 
 - [x] User can log a new expense by entering details (e.g., amount, category, and description).
 - [ ] User can set a monthly budget.
-- [ ] User can view a summary of their expenses.
-- [ ] User can see their budget progress and key statistics.
+- [x] User can view a summary of their expenses.
+- [x] User can see their budget progress and key statistics.
 - [ ] User can filter transactions by category or date.
 
 **Optional Features**
@@ -125,15 +125,20 @@ this section]
 ## GitHub Project board
 
 [Add screenshot of your Project Board with the updated status of issues for Milestone 3. Note that these should include the updated issues you worked on for this sprint and not be a duplicate of Milestone 2 Project board.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![image](https://github.com/user-attachments/assets/0149524b-87bd-40ca-98ec-6e15ee1c180b)
 
 ## Completed user stories
 
 - List the completed user stories from this unit
+- [x] User can log a new expense by entering details (e.g., amount, category, and description).
+- [x] User can view a summary of their expenses.
+- [x] User can see their budget progress and key statistics.
 - List any pending user stories / any user stories you decided to cut
 from the original requirements
 
 [Add video/gif of your current application that shows build progress]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![final2](https://github.com/user-attachments/assets/9f80d807-27ef-4f5f-b340-c9af41bfa851)
 
 ## App Demo Video
 
