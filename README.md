@@ -141,5 +141,6 @@ from the original requirements
 ![final2](https://github.com/user-attachments/assets/9f80d807-27ef-4f5f-b340-c9af41bfa851)
 
 ## App Demo Video
+![demo](https://github.com/user-attachments/assets/cc08164f-b413-4b0a-99a6-7a6848f372f5)
 
-- Embed the YouTube/Vimeo link of your Completed Demo Day prep video
+
